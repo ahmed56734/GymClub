@@ -3,4 +3,33 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="gamePhotoDesc">Game photo</string>
+    <string name="editGame">Edit game</string>e
+    <string name="deleteGame">Delete game</string>
+    <string name="players">Players</string>
+    <string name="coaches">Coaches</string>
+    <string name="downTriangle">▼</string>
+    <string name="upTriangle">▲</string>
+    <string name="description">Description</string>
+    <string name="fees">Fees</string>
+    <string name="name">Name</string>
+    <string name="photoUpload">Photo upload</string>
+    <string name="gameName">Game name</string>
+    <string name="noOfMonthes">No of monthes</string>
+    <string name="editProfile">Edit profile</string>
+    <string name="deleteProfile">Delete profile</string>
+    <string name="progress">Progress</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="salary">Salary</string>
+    <string name="add">+</string>
+    <string name="gymPhoto">Gym photo</string>
+    <string name="profilePicture">Profile picture</string>
+    <string name="day">Day</string>
+    <string name="year">Year</string>
+    <string name="month">Month</string>
+    <string name="birthdate">Birthdate</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
 </resources>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ddd"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:elevation="20dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/header_cover_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/gymPhoto"
+                    android:src="@drawable/gym" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:elevation="10dp"
+                    android:layout_marginTop="-350dp"
+                    android:padding="12dp"
+                    android:background="#5000"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#0000"
+                        android:contentDescription="@string/deleteProfile"
+                        android:src="@drawable/ic_delete_white_24dp"
+                        android:visibility="visible"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#0000"
+                        android:contentDescription="@string/editProfile"
+                        android:src="@drawable/ic_mode_edit_white_24dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/user_profile_photo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-110dp"
+                android:background="#fff"
+                android:elevation="30dp"
+                android:contentDescription="@string/profilePicture"
+                android:padding="3dp"
+                android:src="@drawable/lazar" />
+
+            <ImageButton
+                android:contentDescription="@string/progress"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="end"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="-70dp"
+                android:elevation="30dp"
+                android:background="@drawable/blue_circle"
+                android:src="@drawable/ic_fitness_center_white_36dp"
+                android:visibility="visible"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/tv_player_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="20dp"
+                    android:text="C. Lazar Angelov"
+                    android:textColor="#000"
+                    android:textSize="24sp"
+                    android:maxLines="1"
+                    android:ellipsize="marquee"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_player_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="33 years old | Male"
+                    android:textColor="#555"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:elevation="10dp"
+            android:orientation="horizontal"
+            android:padding="25dp">
+
+            <ImageView
+                android:contentDescription="@string/phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/ic_phone_black_24dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_player_phone_num"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="+20101111002"
+                android:textColor="#333333"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:background="#ffffff"
+            android:elevation="10dp"
+            android:orientation="horizontal"
+            android:padding="25dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:contentDescription="@string/email"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/ic_email_black_24dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_player_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:text="lazarangelov@example.com"
+                android:textColor="#333333"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:background="#222229"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Games"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#222229"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/add"
+                    android:textSize="25sp"
+                    android:textColor="#fff"
+                    android:visibility="visible"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#999" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

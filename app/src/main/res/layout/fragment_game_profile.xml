@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:elevation="10dp"
+                android:contentDescription="@string/gamePhotoDesc"
+                android:src="@drawable/crossfit"
+                android:background="#404fa5d5"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:elevation="10dp"
+                android:layout_marginTop="-400dp"
+                android:padding="12dp"
+                android:background="#5000"
+                android:orientation="horizontal"
+                android:visibility="visible">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#0000"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:contentDescription="Edit game"
+                    android:src="@drawable/ic_mode_edit_white_24dp" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#0000"
+                    android:contentDescription="@string/deleteGame"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_delete_white_24dp" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="-114dp"
+            android:padding="10dp"
+            android:elevation="10dp"
+            >
+            <TextView
+                android:id="@+id/tv_game_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Crossfit"
+                android:textColor="#ffffff"
+                android:fontFamily="sans-serif"
+                android:textSize="60sp"
+                android:textStyle="bold"
+                android:shadowColor="#000"
+                android:shadowRadius="15"
+                android:maxLines="1"
+                android:ellipsize="marquee"
+                />
+            <TextView
+                android:id="@+id/tv_fees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="100$ per month"
+                android:layout_marginTop="-10dp"
+                android:textColor="#ccc"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:shadowRadius="7"
+                android:shadowColor="#000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-4dp"
+            android:background="#404fa5d5"
+            android:elevation="5dp">
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:text="@string/description"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="start|center"
+                android:padding="10dp"
+                android:textAllCaps="false"
+                android:background="@drawable/rounded_gradiant" />
+            <Button
+                android:id="@+id/triangle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/downTriangle"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textAllCaps="false"
+                android:background="@drawable/rounded_gradiant"
+                android:onClick="hideDescription"/>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CrossFit is a branded fitness regimen Promoted as both
+a physical exercise philosophy and also as a competitive
+fitness sport, CrossFit workouts incorporate elements from
+high-intensity interval training, Olympic weightlifting,
+plyometrics, powerlifting, gymnastics, girevoy sport,
+calisthenics, strongman, and other exercises"
+            android:padding="10dp"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginTop="-5dp"
+            android:background="@drawable/description_text"
+            />
+
+
+
+    </LinearLayout>
+</ScrollView>
